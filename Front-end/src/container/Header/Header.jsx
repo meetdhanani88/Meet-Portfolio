@@ -50,14 +50,23 @@ const Header = () => (
             transition={{ duration: 0.5, delayChildren: 0.5 }}
             className="app__header-img"
         >
-            {/* <img src={images.profile} alt="profile_bg" /> */}
-            <motion.img
+
+
+
+            <motion.img src={images.profile} alt="profile_bg" whileHover={scaleVariants.hover}
+                whileInView={{ y: [-100, 0], opacity: [0, 1] }}
+                transition={{ duration: 0.5 }}
+            />
+
+            {/* <motion.img
                 whileInView={{ scale: [0, 1] }}
                 transition={{ duration: 1, ease: 'easeInOut' }}
                 src={images.circle}
                 alt="profile_circle"
                 className="overlay_circle"
-            />
+            /> */}
+
+
         </motion.div>
 
         <motion.div

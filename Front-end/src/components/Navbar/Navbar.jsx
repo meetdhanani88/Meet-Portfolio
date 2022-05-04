@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion, AnimatePresence, useCycle } from 'framer-motion';
 
